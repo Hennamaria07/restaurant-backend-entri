@@ -1,6 +1,5 @@
 // SEPARATING THE HANDLER FUNCTIONS
 const bcrypt = require('bcrypt');
-const { response } = require('express');
 const User = require('../models/userModels');
 const { getToken } = require('../utils/jwtToken');
 
