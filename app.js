@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use(express.json()); // Parse JSON data
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded data
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
-app.use('/uploads/restaurantPhotograph', express.static(path.join(__dirname, '/uploads/restaurantPhotograph')));
+// app.use('/uploads/restaurantPhotograph', express.static(path.join(__dirname, '/uploads/restaurantPhotograph')));
 app.use(cors({ credentials: true, 
     origin: "https://restro-world-entri.netlify.app" }));
 app.use("/api/v1", userRoutes);
